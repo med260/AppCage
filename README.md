@@ -125,13 +125,3 @@ For questions, feedback, or support, create an issue on GitHub or contact the ma
 > Take control of your focus — trap distractions before they escape.
 > **AppCage**
 
-```
-
----
-
-If you want, I can **also make a `docs/ARCHITECTURE.md` file** that visually maps **UI → Service → Hook → Core → DB → Watchdog**, which is perfect for contributors and first-time developers.  
-
-Do you want me to do that next?
-```
-://github.com/yourusername/AppCage.git
-cd AppCage
