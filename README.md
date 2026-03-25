@@ -1,6 +1,9 @@
 # AppCage
 locks apps like they’re trapped
 
+Absolutely! Here’s a professional, contributor-friendly **README.md** for your project **AppCage**. I’ve structured it for an **open-source Cold-Turkey-style app blocker**, ready for GitHub.
+
+```markdown
 # AppCage
 
 **AppCage** is an open-source, system-level application blocker for Windows, designed to help users regain focus and control over their digital workflow. It enforces app time limits, blocks distracting applications, and provides a robust, tamper-resistant system for productivity.
@@ -21,7 +24,14 @@ locks apps like they’re trapped
 
 ## Architecture Overview
 
-AppCage follows a modular architecture inspired by enterprise-level blockers :
+AppCage follows a modular architecture inspired by enterprise-level blockers like Cold Turkey:
+
+```
+
+UI (Qt C++) → IPC (Named Pipes) → Service (C++) → Hook Layer (C++) → Core Engine (C++) → SQLite DB
+↘ Watchdog / Anti-Tamper
+
+````
 
 - **UI Layer**: Provides a user interface for rules, timers, and status.  
 - **Service Layer**: Runs continuously in the background, enforcing rules.  
@@ -48,4 +58,88 @@ AppCage follows a modular architecture inspired by enterprise-level blockers :
 
 ```bash
 git clone https://github.com/yourusername/AppCage.git
+cd AppCage
+````
+
+2. Build Core Engine, Hook Layer, and Service:
+
+```bash
+mkdir build && cd build
+cmake ..
+cmake --build . --config Release
+```
+
+3. Build the UI with Qt:
+
+```bash
+cd ../ui
+qmake AppCage.pro
+make
+```
+
+4. Run the Service (administrator privileges required):
+
+```bash
+AppCageService.exe install
+AppCageService.exe start
+```
+
+5. Launch the UI and configure your blocking rules.
+
+---
+
+## Contribution
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/my-feature`
+3. Commit your changes: `git commit -m 'Add my feature'`
+4. Push to the branch: `git push origin feature/my-feature`
+5. Open a Pull Request.
+
+Check the `docs/` folder for detailed **architecture guides**, **plugin development**, and **contribution guidelines**.
+
+---
+
+## License
+
+AppCage is released under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
+
+## Future Roadmap
+
+* Plugin system for custom blocking rules
+* Network blocking via Windows Filtering Platform
+* Optional kernel-level enforcement for advanced users
+* Statistics and reporting dashboards
+* Cross-platform support for macOS (experimental)
+
+---
+
+## Screenshots
+
+*(Add screenshots once the UI is implemented)*
+
+---
+
+## Contact
+
+For questions, feedback, or support, create an issue on GitHub or contact the maintainers.
+
+---
+
+> Take control of your focus — trap distractions before they escape.
+> **AppCage**
+
+```
+
+---
+
+If you want, I can **also make a `docs/ARCHITECTURE.md` file** that visually maps **UI → Service → Hook → Core → DB → Watchdog**, which is perfect for contributors and first-time developers.  
+
+Do you want me to do that next?
+```
+://github.com/yourusername/AppCage.git
 cd AppCage
