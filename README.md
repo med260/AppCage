@@ -1,7 +1,6 @@
 # AppCage
 locks apps like they’re trapped
 
-Absolutely! Here’s a professional, contributor-friendly **README.md** for your project **AppCage**. I’ve structured it for an **open-source Cold-Turkey-style app blocker**, ready for GitHub.
 
 ```markdown
 # AppCage
