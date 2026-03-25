@@ -2,7 +2,6 @@
 locks apps like they’re trapped
 
 
-```markdown
 # AppCage
 
 **AppCage** is an open-source, system-level application blocker for Windows, designed to help users regain focus and control over their digital workflow. It enforces app time limits, blocks distracting applications, and provides a robust, tamper-resistant system for productivity.
@@ -115,13 +114,7 @@ AppCage is released under the **MIT License**. See [LICENSE](LICENSE) for detail
 * Statistics and reporting dashboards
 * Cross-platform support for macOS (experimental)
 
----
 
-## Screenshots
-
-*(Add screenshots once the UI is implemented)*
-
----
 
 ## Contact
 
