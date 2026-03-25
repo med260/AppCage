@@ -22,15 +22,6 @@ locks apps like they’re trapped
 
 ## Architecture Overview
 
-AppCage follows a modular architecture inspired by enterprise-level blockers like Cold Turkey:
-
-```
-
-UI (Qt C++) → IPC (Named Pipes) → Service (C++) → Hook Layer (C++) → Core Engine (C++) → SQLite DB
-↘ Watchdog / Anti-Tamper
-
-````
-
 - **UI Layer**: Provides a user interface for rules, timers, and status.  
 - **Service Layer**: Runs continuously in the background, enforcing rules.  
 - **Hook Layer**: Intercepts app launches and prevents blocked processes.  
